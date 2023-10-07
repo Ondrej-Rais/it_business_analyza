@@ -1,10 +1,12 @@
 ---
-date: 1.1.2023
+date: 7.10.2023
 author: Ondřej Rais
-title: test
+title: Specifikace požadavků
 ---
 
 ## 1. Úvod
+
+<span style="background: yellow">Pozn.: žlutou barvou označené texty jsou připravené dotazy.</span>
 
 ### 1.1 Účel dokumentu 
 
@@ -12,41 +14,37 @@ Objednatel objednává systém a potřebuje se s dodavatelem domluvit na rozsahu
 
 ### 1.2 Vize a rozsah systému 
 
-*co bude systém dělat, jaké budou jeho cíle, výhody*
-obchodní cíle a kritéria úspěchu
+Online taxi služba určená řidičům a zákazníkům taxislužby. Umožňuje provést zákazníkům rezervaci (vč. předběžných rezervací) s možností platby. Systém poskytuje vedení společnosti přehled o kvalifikaci a zákaznickém hodnocení řidičů. Systém dále umožňuje zákazníkům kontaktovat technickou podporu systému.  
+
+![Myšlenková mapa](https://cdn-0.plantuml.com/plantuml/png/LP0zSeCm48LxJg6QKxXCat4cJfLkGJlE6hHYf8L9V0SV89EAqWMJFeMRXNi512vSlXzzUj8k2WHnnDP1a-LcppKn6e5FYdKxtGh8yjmScg1z1sRw9alZPVgTpTmyWr29nleEBVieEYJxoS-gHDRXeMzUyOoXWn9JQr-1csuaUatoO0I3qu7HhN5ncg7QBvGJiLwDZxuOVr9udnCseWuh_qXH0gH99dx5cUtQ9NcfGR1OK9kRAEyGTQZNA_Hll0WoLalz3SiFfhBItZJUDZx0EibYtEhM2vpRXot9kZzqFYF4nso7RBU__GS0)
+
+<span style="background: yellow"><b>Dotaz č. 1: </b> jakým způsobem zákazníci provádí rezervace nyní? Co je bude motivovat k registraci systému?</span>
+
+<span style="background: yellow"><b>Dotaz č. 2: </b> jaké máte obchodní cíle? Je cílem přivést nové zákazníky? Pokud ano, jakou by měl mít systém výhodu oproti konkurenci?</span>
+
+<span style="background: yellow"><b>Dotaz č. 3: </b> přemýšleli jste nad tím, co budou kritéria úspěchu tohoto projektu? Jak poznáte, že byl projekt úspěšný? Navrhuji stanovit konkrétní, měřitelný a časově ohraničený cíl.</span>
 
 ### 1.3 Reference
 
-*Uveďte všechny další dokumenty nebo webové adresy, na které se tento SRS odkazuje. Ty mohou zahrnovat uživatele
-průvodce stylem rozhraní, smlouvy, standardy, specifikace systémových požadavků, případ použití
-dokumenty nebo dokument vize a rozsahu. Poskytněte dostatek informací, aby čtenář mohl
-přístup ke kopii každé reference, včetně názvu, autora, čísla verze, data a zdroje nebo
-umístění.*
-
-### 1.4 Přehled dokumentu 
-
-*aa**
+<span style="background: yellow"><b>Dotaz č. 4: </b> existují nějaké materiály či dokumenty, např. manuál firemní identity, které bude nutné zohlednit při vývoji systému?</span>
 
 ## 2. Všeobecný popis
 
 ### 2.1 Kontext systému
 
-*<Popište kontext a původ produktu specifikovaného v této SRS. Například stát
-zda je tento produkt navazujícím členem rodiny produktů, náhradou za určité stávající
-systémy nebo nový, samostatný produkt. Pokud SRS definuje součást většího systému,
-vztáhnout požadavky většího systému na funkčnost tohoto softwaru a identifikovat
-rozhraní mezi těmito dvěma. Jednoduchý diagram, který ukazuje hlavní součásti kombinézy
-systém, propojení podsystémů a externí rozhraní mohou být užitečná.>*
+<span style="background: yellow"><b>Dotaz č. 5: </b> existuje ve vaší společnosti nějaký jiný systém, na který by měl být nový systém napojen? Pokud ano, o jaké systémy se jedná? Máte k dispozici diagram architektury systémů?</span>
 
 ### 2.2 Přehled hlavních funkcí systému
 
-*<Shrňte hlavní funkce, které musí produkt vykonávat nebo které musí umožnit uživateli provádět. Podrobnosti
-budou uvedeny v části 3, takže zde je potřeba pouze shrnutí na vysoké úrovni (například seznam odrážek).
-Uspořádejte funkce tak, aby byly srozumitelné každému čtenáři SRS. Obrázek z
-hlavní skupiny souvisejících požadavků a jak spolu souvisí, jako je diagram toku dat nejvyšší úrovně nebo
-diagram tříd objektů, je často efektivní.*
+* Rezervační systém
+* Systém hodnocení řidičů
+* Monitoring dovedností řidičů
+* Technická podpora
+* Report pro vedení
 
 ### 2.3 Charakteristika uživatelů systému
+
+
 
 *Identify the various user classes that you anticipate will use this product. User classes may be
 differentiated based on frequency of use, subset of product functions used, technical expertise,
