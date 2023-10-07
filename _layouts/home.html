@@ -2,13 +2,15 @@
 layout: default
 ---
 
-# {{ page.title }}
+<table>
+  <tbody>
+    <tr><td><strong>Autor: </strong></td><td>{{ page.author }}</td></tr>
+    <tr><td><strong>Datum vytvoření: </strong></td><td>{{ page.date }}</td></tr>
+  </tbody>
+</table>
 
-|                      |                                     |
-| -------------------- | ----------------------------------- |
-| **Vytvořil:**        | {{ page.author }} |
-| **Datum vytvoření:** | {{ page.date }}                  |
-
-## Obsah
+<h2>Obsah</h2>
 {% include toc.html html=content ordered=false %}
+
+{{ content }}
 
