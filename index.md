@@ -163,10 +163,48 @@ Online taxislužba je systém určený řidičům a zákazníkům taxislužby. U
 
 {% for tag in site.tags %}
 {% if tag[0] contains 'Nefunkční' %}
-{% assign sortedPosts = tag[1] | sort: 'number' %}
-{% for post in sortedPosts %}
-{{ post.title }}
-{% endfor %}
+<table class="full">
+  <thead>
+    <tr>
+      <th width="100">Označení</th> 
+      <th>Název</th>       
+      <th width="200">Zdroj</th> 
+      <th width="80">Detail</th> 
+    </tr>
+  </thead>
+  <tbody>
+  {% assign sortedPosts = tag[1] | sort: 'number' %}
+  {% for post in sortedPosts %}
+  <tr>    
+    <td>
+      {% if post.detail %}
+      <a href=".{{ post.url }}" title="{{ post.number }}">{{ post.number }}</a>
+      {% else %}
+      {{ post.number }}
+      {% endif %}
+    </td>
+    <td>
+      {% if post.detail %}
+      <a href=".{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+      {% else %}
+      {{ post.title }}
+      {% endif %}
+    </td>        
+    <td>{{ post.source }}</td>
+    <td>
+      {% if post.detail %}
+      <a href=".{{ post.url }}" title="Více informace">Více &raquo;</a>
+      {% endif %}
+    </td>
+  </tr>
+  {% if post.questions %}
+  <tr>
+    <td colspan="6">{{ post.questions }}</td>
+  </tr>
+  {% endif %}
+  {% endfor %}
+  </tbody>
+</table>
 {% endif %}
 {% endfor %}
 
