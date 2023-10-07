@@ -24,15 +24,17 @@ Online taxi služba určená řidičům a zákazníkům taxislužby. Umožňuje 
 
 <span style="background: yellow"><b>Dotaz č. 3: </b> přemýšleli jste nad tím, co budou kritéria úspěchu tohoto projektu? Jak poznáte, že byl projekt úspěšný? Navrhuji stanovit konkrétní, měřitelný a časově ohraničený cíl.</span>
 
+<span style="background: yellow"><b>Dotaz č. 4: </b> existují nějaká rizika, která by omezila naplnění cílů?</span>
+
 ### 1.3 Reference
 
-<span style="background: yellow"><b>Dotaz č. 4: </b> existují nějaké materiály či dokumenty, např. manuál firemní identity, které bude nutné zohlednit při vývoji systému?</span>
+<span style="background: yellow"><b>Dotaz č. 5: </b> existují nějaké materiály či dokumenty, např. manuál firemní identity, které bude nutné zohlednit při vývoji systému?</span>
 
 ## 2. Všeobecný popis
 
 ### 2.1 Kontext systému
 
-<span style="background: yellow"><b>Dotaz č. 5: </b> existuje ve vaší společnosti nějaký jiný systém, na který by měl být nový systém napojen? Pokud ano, o jaké systémy se jedná? Máte k dispozici diagram architektury systémů?</span>
+<span style="background: yellow"><b>Dotaz č. 6: </b> existuje ve vaší společnosti nějaký jiný systém, na který by měl být nový systém napojen? Pokud ano, o jaké systémy se jedná? Máte k dispozici diagram architektury systémů?</span>
 
 ### 2.2 Přehled hlavních funkcí systému
 
@@ -44,26 +46,25 @@ Online taxi služba určená řidičům a zákazníkům taxislužby. Umožňuje 
 
 ### 2.3 Charakteristika uživatelů systému
 
-
-
-*Identify the various user classes that you anticipate will use this product. User classes may be
-differentiated based on frequency of use, subset of product functions used, technical expertise,
-security or privilege levels, educational level, or experience. Describe the pertinent characteristics
-of each user class. Certain requirements may pertain only to certain user classes. Distinguish the
-most important user classes for this product from those who are less important to satisfy*
+| Typ uživatele | Stručný popis |
+|---------------|---------------|
+| Vedení společnosti              | Najímá pracovníky, spravuje je v systému, sleduje reporty a zákaznické hodnocení. |
+| Řidič              | Přijímá rezervace z dispečinku, realizuje přepravu.              |
+| Zákazník              | Rezervuje, hodnotí, provádí platbu, pokládá dotazy na technickou podporu.              |
+| Pracovník technické podpory              |  Odpovídá na dotazy od zákazníků, příp. předává na vývojový tým.      |
+| Dispečink              | Přijímá nové rezervace a předává je dostupným řidičům.              |
 
 ### 2.4 Omezení při návrhu a implementaci
 
-*<Popište všechny položky nebo problémy, které budou omezovat možnosti dostupné vývojářům. Tyto by mohly
-zahrnují: podnikové nebo regulační zásady; hardwarová omezení (požadavky na časování, paměť
-požadavky); rozhraní k jiným aplikacím; konkrétní technologie, nástroje a databáze
-použitý; paralelní operace; jazykové požadavky; komunikační protokoly; bezpečnostní
-úvahy; designové konvence nebo programovací standardy (například, pokud zákazníka
-organizace bude odpovědná za údržbu dodaného softwaru).>*
+<div style="background: yellow"><b>Dotaz č. 7: </b> existují nějaká omezení či normy, které musí dodavatel, resp. systém splňovat? Zřejmě budeme řešit následující:
+<ul>  
+<li>110/2019 Sb. Zákon o zpracování osobních údajů (registrace zákazníků, osobní údaje zaměstnanců)</li>
+<li>235/2004 Sb. Zákon o dani z přidané hodnoty (zjednodušený daňový doklad)</li>
+<li>563/1991 Sb. Zákon o účetnictví (příjmové pokladní doklady)</li>
+</ul>
+</div>
 
-### 2.5 Předpoklady a závislosti
-
-*uvádí vąechny faktory od nichž jsou odvozeny nebo na nichž závisí požadavky specifikované dále v dokumentu, kromě již uvedených omezení. Např. se zde uvede, co musí být organizačně a technicky připraveno na místě zákazníka, než bude možné systém nainstalovat a provozovat.*
+<span style="background: yellow"><b>Dotaz č. 8: </b> budou vývojáři limitováni nějakou technologií? Musí se jednat o nativní mobilní aplikaci nebo může být využito technologie tenkého klienta a systém vytvořen jako webová responzivní aplikace?</span>
 
 ## 3. Přehled požadavků na systém
 
