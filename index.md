@@ -1,15 +1,15 @@
 ---
-updated: 1.1.2023
+date: 1.1.2023
 author: Ondřej Rais
 title: test
 ---
-# it_business_analyza
-
 
 
 začátek
 
-## články
+## 1.1 články
+
+## 1.2 aaa
 
 ### funkční
 
