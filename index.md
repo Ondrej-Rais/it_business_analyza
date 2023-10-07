@@ -3,7 +3,13 @@ excerpt_separator: <!--more-->
 ---
 # it_business_analyza
 
+
+
 začátek
+
+## články
+
+### funkční
 
 <ul>
   {% for post in site.posts %}
@@ -24,5 +30,7 @@ začátek
     {% endfor %}
   </ul>
 {% endfor %}
+
+## další
 
 konec
