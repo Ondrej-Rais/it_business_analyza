@@ -46,11 +46,9 @@ Online taxislužba je systém určený řidičům a zákazníkům taxislužby. U
 
 ### 2.2 Přehled hlavních funkcí systému
 
-* Rezervační systém
-* Systém hodnocení řidičů
-* Monitoring dovedností řidičů
-* Technická podpora
-* Report pro vedení
+{% for category in site.categories %}
+* {{ category[0] }}
+{% endor %}
 
 [&laquo; Zpět na obsah](#obsah)
 
@@ -61,7 +59,7 @@ Online taxislužba je systém určený řidičům a zákazníkům taxislužby. U
 | Vedení              | Najímá pracovníky, spravuje je v systému, sleduje reporty a zákaznické hodnocení. |
 | Řidič              | Přijímá rezervace z dispečinku, realizuje přepravu.              |
 | Podpora              |  Odpovídá na dotazy od zákazníků, příp. předává na vývojový tým.      |
-| Dispečink              | Přijímá nové rezervace a předává je dostupným řidičům.              |
+| Dispečink              | Přijímá telefonické rezervace a předává je dostupným řidičům.              |
 | Zákazník              | Rezervuje, hodnotí, provádí platbu, pokládá dotazy na technickou podporu.              |
 
 ![Diagram uživatelů](https://cdn-0.plantuml.com/plantuml/png/SoWkIImgAStDuKfCAYufIamkKGW0albbUOVNPdCXc0esDRgw2c6fAQb07eQuIsPnGUgHtimyJ2r7PsIcP1xfnH0Fo4yfo2zAv4hEIImkLeWwl30xiGfifqDgNWhGFG00)
