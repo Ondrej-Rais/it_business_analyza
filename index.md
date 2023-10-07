@@ -48,7 +48,7 @@ Online taxislužba je systém určený řidičům a zákazníkům taxislužby. U
 
 {% for category in site.categories %}
 * {{ category[0] }}
-{% endor %}
+{% endfor %}
 
 [&laquo; Zpět na obsah](#obsah)
 
