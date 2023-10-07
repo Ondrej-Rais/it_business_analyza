@@ -102,18 +102,29 @@ Online taxislužba je systém určený řidičům a zákazníkům taxislužby. U
 <table class="full">
   <thead>
     <tr>
+      <th width="40">&nbsp;</th> 
       <th width="120">Označení</th> 
-      <th>Název</th> 
-      <th width="90">Priorita</th> 
+      <th>Název</th>       
       <th width="150">Typ uživatele</th> 
       <th width="200">Zdroj</th> 
-      <th width="100">Detail</th> 
+      <th width="80">Detail</th> 
     </tr>
   </thead>
   <tbody>
     {% assign sortedPosts = category[1] | sort: 'number' %}
     {% for post in sortedPosts %}
       <tr>
+        <td style="text-align: center;">
+          {% if post.priority contains 'Must have' %}
+          🔴
+          {% elsif post.priority contains 'Should have' %}
+          🟡
+          {% elsif post.priority contains 'Could have' %}
+          ⚪
+          {% else %}
+          {{ post.priority }}
+          {% endif %}
+        </td>
         <td>
           {% if post.detail %}
           <a href=".{{ post.url }}" title="{{ post.number }}">{{ post.number }}</a>
@@ -127,18 +138,7 @@ Online taxislužba je systém určený řidičům a zákazníkům taxislužby. U
           {% else %}
           {{ post.title }}
           {% endif %}
-        </td>
-        <td style="text-align: center;">
-          {% if post.priority contains 'Must have' %}
-          🔴
-          {% elsif post.priority contains 'Should have' %}
-          🟡
-          {% elsif post.priority contains 'Could have' %}
-          ⚪
-          {% else %}
-          {{ post.priority }}
-          {% endif %}
-        </td>
+        </td>        
         <td>{{ post.user }}</td>
         <td>{{ post.source }}</td>
         <td>
