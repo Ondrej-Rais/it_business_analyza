@@ -86,6 +86,8 @@ Online taxislužba je systém určený řidičům a zákazníkům taxislužby. U
 
 <span style="background: yellow">Kromě požadavků, které byly přímo zmíněny ve vašemu úvodním dopise, přikládám i mnou navrhované požadavky, které vychází ze zkušeností s podobnými systémy.</span>
 
+<span style="background: yellow">Pozn.: používám jméno Jan Novák jako jména objednatele.</span>
+
 **Legenda - priority:**
 
 🔴 Must have
