@@ -212,10 +212,10 @@ Online taxislužba je systém určený řidičům a zákazníkům taxislužby. U
 
 ## 4. Ostatní
 
-## 4.1 Slovník výrazů
+### 4.1 Slovník výrazů
 
 [&laquo; Zpět na obsah](#obsah)
 
-## 4.2 Úkoly k dořešení
+### 4.2 Úkoly k dořešení
 
 [&laquo; Zpět na obsah](#obsah)
