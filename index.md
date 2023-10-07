@@ -18,7 +18,7 @@ Objednatel objednává systém a potřebuje se s dodavatelem domluvit na rozsahu
 
 Online taxislužba je systém určený řidičům a zákazníkům taxislužby. Umožňuje provést zákazníkům rezervaci (vč. předběžných rezervací) s možností platby. Systém poskytuje vedení společnosti přehled o kvalifikaci a zákaznickém hodnocení řidičů. Systém dále umožňuje zákazníkům kontaktovat technickou podporu systému.  
 
-![Myšlenková mapa](https://cdn-0.plantuml.com/plantuml/png/LP0zSeCm48LxJg6QKxXCat4cJfLkGJlE6hHYf8L9V0SV89EAqWMJFeMRXNi512vSlXzzUj8k2WHnnDP1a-LcppKn6e5FYdKxtGh8yjmScg1z1sRw9alZPVgTpTmyWr29nleEBVieEYJxoS-gHDRXeMzUyOoXWn9JQr-1csuaUatoO0I3qu7HhN5ncg7QBvGJiLwDZxuOVr9udnCseWuh_qXH0gH99dx5cUtQ9NcfGR1OK9kRAEyGTQZNA_Hll0WoLalz3SiFfhBItZJUDZx0EibYtEhM2vpRXot9kZzqFYF4nso7RBU__GS0)
+![Myšlenková mapa](https://cdn-0.plantuml.com/plantuml/png/VPAnJiCm48RtFeNdF4MH65YW4kK5hlP9k8djoBv4DE_0JiMKiKF46tHnyrvSObU2e39uyDt_V-VxvNKWy6IqLGRgLI4sjj8M1S6R3bKpddUmAWgnFGIA9oDgx_Y0TAsDGtdWLY7k6a9BkWE9yttyY4E7t1SXkHekJupQnxw57_xnQs4eMwWq7PB-4KXB5CgrgAnZqf3g3uwlSjQFHwtqvJrn2l4KUuOpkXUk1XgFaoWF9wO5qYNC8rzGlbejIrRMJjNEm-yt4lUGCdTflegws9VGvKN-4thiqBSW_pnccMr6tixsEPCmWJObcF6isPx1Wj2RE5WqMR3Re-8yfh3ssiQJSC7jBf-taanJxXr19om8oZ6v9iVKfBsSrB6l9b-80rrnMnM7QgQHXy0B9DPaO_9KvyrwC_-8DLgLFzqt)
 
 <span style="background: yellow"><b>Dotaz č. 1: </b> jakým způsobem zákazníci provádí rezervace nyní? Co je bude motivovat k registraci systému?</span>
 
