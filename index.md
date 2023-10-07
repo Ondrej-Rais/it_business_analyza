@@ -91,17 +91,19 @@ Online taxislužba je systém určený řidičům a zákazníkům taxislužby. U
 {% for category in site.categories %}
 #### {{ category[0] }}
 
-<table>
+<table width="100%">
   <thead>
     <tr>
       <th>Označení</th> 
       <th>Název</th> 
       <th>Priorita</th> 
       <th>Zdroj</th> 
+      <th>Detail</th> 
     </tr>
   </thead>
   <tbody>
-    {% for post in category[1] %}
+    {% assign sortedPosts = category[1] | sort: 'number' %}
+    {% for post in sortedPosts %}
       <tr>
         <td>
           {% if post.detail %}
