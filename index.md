@@ -101,9 +101,9 @@ Online taxislužba je systém určený řidičům a zákazníkům taxislužby. U
   <thead>
     <tr>
       <th width="40">&nbsp;</th> 
-      <th width="120">Označení</th> 
+      <th width="100">Označení</th> 
       <th>Název</th>       
-      <th width="150">Typ uživatele</th> 
+      <th width="160">Typ uživatele</th> 
       <th width="200">Zdroj</th> 
       <th width="80">Detail</th> 
     </tr>
