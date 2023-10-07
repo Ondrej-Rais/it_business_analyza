@@ -1,5 +1,7 @@
 ---
-excerpt_separator: <!--more-->
+updated: 1.1.2023
+author: Ondřej Rais
+title: test
 ---
 # it_business_analyza
 
