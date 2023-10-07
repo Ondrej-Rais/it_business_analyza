@@ -86,6 +86,17 @@ Online taxislužba je systém určený řidičům a zákazníkům taxislužby. U
 
 ### 3.1 Funkční požadavky
 
+<span style="background: yellow">Kromě požadavků, které byly přímo zmíněny ve vašemu úvodním dopise, přikládám i mnou navrhované požadavky, které vychází ze zkušeností s podobnými systémy.</span>
+
+{% for category in site.categories %}
+  <h3>{{ category[0] }}</h3>
+  <ul>
+    {% for post in category[1] %}
+      <li><a href=".{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+{% endfor %}
+
 <ul>
   {% for post in site.posts %}
     <li>
