@@ -169,7 +169,6 @@ Online taxislužba je systém určený řidičům a zákazníkům taxislužby. U
       <th width="100">Označení</th> 
       <th>Název</th>       
       <th width="200">Zdroj</th> 
-      <th width="80">Detail</th> 
     </tr>
   </thead>
   <tbody>
@@ -177,29 +176,16 @@ Online taxislužba je systém určený řidičům a zákazníkům taxislužby. U
   {% for post in sortedPosts %}
   <tr>    
     <td>
-      {% if post.detail %}
-      <a href=".{{ post.url }}" title="{{ post.number }}">{{ post.number }}</a>
-      {% else %}
       {{ post.number }}
-      {% endif %}
     </td>
     <td>
-      {% if post.detail %}
-      <a href=".{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-      {% else %}
-      {{ post.title }}
-      {% endif %}
+      {{ post.title }}      
     </td>        
     <td>{{ post.source }}</td>
-    <td>
-      {% if post.detail %}
-      <a href=".{{ post.url }}" title="Více informace">Více &raquo;</a>
-      {% endif %}
-    </td>
   </tr>
-  {% if post.questions %}
+  {% if post.description %}
   <tr>
-    <td colspan="6">{{ post.questions }}</td>
+    <td colspan="3">{{ post.description }}</td>
   </tr>
   {% endif %}
   {% endfor %}
@@ -207,14 +193,6 @@ Online taxislužba je systém určený řidičům a zákazníkům taxislužby. U
 </table>
 {% endif %}
 {% endfor %}
-
-snadno použitelná
-bezpečná platební brána 
-technická podpora 24/7
-rychle vyřešit problémy zákazníků
-více jazyků
-
-
 
 3.1 User Interfaces
 <Describe the logical characteristics of each interface between the software product and the
