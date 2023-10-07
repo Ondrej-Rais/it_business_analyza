@@ -161,6 +161,23 @@ Online taxislužba je systém určený řidičům a zákazníkům taxislužby. U
 
 ### 3.2 Nefunkční požadavky 
 
+{% for tag in site.tags %}
+{% if tag[0] contains 'Nefunkční' %}
+{% assign sortedPosts = tag[1] | sort: 'number' %}
+{% for post in sortedPosts %}
+{{ post.title }}
+{% endor %}
+{% endif %}
+{% endfor %}
+
+snadno použitelná
+bezpečná platební brána 
+technická podpora 24/7
+rychle vyřešit problémy zákazníků
+více jazyků
+
+
+
 3.1 User Interfaces
 <Describe the logical characteristics of each interface between the software product and the
 users. This may include sample screen images, any GUI standards or product family style guides
