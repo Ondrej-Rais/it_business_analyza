@@ -1,11 +1,15 @@
+---
+excerpt_separator: <!--more-->
+---
 # it_business_analyza
 
-agoh
+začátek
 
   {% for post in site.posts %}
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a> 
+      
     </li>
   {% endfor %}
 
-aaa
+konec
