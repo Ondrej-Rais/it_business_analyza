@@ -88,6 +88,9 @@ Online taxislužba je systém určený řidičům a zákazníkům taxislužby. U
 
 <span style="background: yellow">Kromě požadavků, které byly přímo zmíněny ve vašemu úvodním dopise, přikládám i mnou navrhované požadavky, které vychází ze zkušeností s podobnými systémy.</span>
 
+**Legenda - priority**
+
+
 {% for category in site.categories %}
 #### {{ category[0] }}
 
@@ -97,6 +100,7 @@ Online taxislužba je systém určený řidičům a zákazníkům taxislužby. U
       <th>Označení</th> 
       <th>Název</th> 
       <th>Priorita</th> 
+      <th>Typ uživatele</th> 
       <th>Zdroj</th> 
       <th>Detail</th> 
     </tr>
@@ -105,7 +109,7 @@ Online taxislužba je systém určený řidičům a zákazníkům taxislužby. U
     {% assign sortedPosts = category[1] | sort: 'number' %}
     {% for post in sortedPosts %}
       <tr>
-        <td>
+        <td width="120">
           {% if post.detail %}
           <a href=".{{ post.url }}" title="{{ post.number }}">{{ post.number }}</a>
           {% else %}
@@ -119,14 +123,20 @@ Online taxislužba je systém určený řidičům a zákazníkům taxislužby. U
           {{ post.title }}
           {% endif %}
         </td>
-        <td>{{ post.priority }}</td>
-        <td>{{ post.source }}</td>
-        <td>
+        <td width="120">{{ post.priority }}</td>
+        <td>{{ post.user }}</td>
+        <td width="200">{{ post.source }}</td>
+        <td width="100">
           {% if post.detail %}
           <a href=".{{ post.url }}" title="Více informace">Více &raquo;</a>
           {% endif %}
         </td>
       </tr>
+      {% if post.questions %}
+      <tr>
+        <td colspan="5">{{ post.questions }}</td>
+      </tr>
+      {% endif %}
     {% endfor %}
   </tbody>
 </table>
