@@ -2,11 +2,13 @@
 layout: default
 ---
 
-{{ page.title }} 
+# {{ page.title }}
 
-{{ page.author }}
+|                      |                                     |
+| -------------------- | ----------------------------------- |
+| **Vytvořil:**        | {{ page.author }} |
+| **Datum vytvoření:** | {{ page.date }}                  |
 
-obsah:
-{% include toc.html html=content ordered=true %}
-home:
-{{ content }}
+## Obsah
+{% include toc.html html=content ordered=false %}
+
