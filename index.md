@@ -166,7 +166,7 @@ Online taxislužba je systém určený řidičům a zákazníkům taxislužby. U
 {% assign sortedPosts = tag[1] | sort: 'number' %}
 {% for post in sortedPosts %}
 {{ post.title }}
-{% endor %}
+{% endfor %}
 {% endif %}
 {% endfor %}
 
