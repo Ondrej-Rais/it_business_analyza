@@ -160,3 +160,8 @@ clarify the relative preferences for various attributes, such as ease of use ove
 
 lokalizace
 
+## 4. Ostatní
+
+## 4.1 Slovník výrazů
+
+## 4.2 Úkoly k dořešení
