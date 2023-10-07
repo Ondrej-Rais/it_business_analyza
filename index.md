@@ -194,74 +194,19 @@ Online taxislužba je systém určený řidičům a zákazníkům taxislužby. U
 {% endif %}
 {% endfor %}
 
-3.1 User Interfaces
-<Describe the logical characteristics of each interface between the software product and the
-users. This may include sample screen images, any GUI standards or product family style guides
-that are to be followed, screen layout constraints, standard buttons and functions (e.g., help) that
-will appear on every screen, keyboard shortcuts, error message display standards, and so on.
-Define the software components for which a user interface is needed. Details of the user interface
-design should be documented in a separate user interface specification.>
+<span style="background:yellow"><strong>Dotaz č. 36:</strong> jaké máte požadavky na dokumentaci systému? Myslím si, že by měla obsahovat alespoň datový model - průběžně aktualizovaný popis struktury databáze, programátorskou dokumentaci, uživatelskou příručku pro pracovníky i zákazníky.</span>
 
-Uživatelské rozhraní
-V rámci úspory nákladu musí být využit některý z volně dostupných frameworků uživatelského rozhraní (bude použit https://vuetifyjs.com/). Systém musí být responsivní pro přístup z mobilních zařízení. Objednatel nepožaduje vícejazyčné rozhraní (pouze české). Objednatel nepožaduje realizovat systém dle požadavků zákona o přístupnosti webových stránek (Zákon č. 99/2019 Sb.).
+<span style="background:yellow"><strong>Dotaz č. 37:</strong> existují požadavky na architekturu systému? Viz dotaz č. 8</span>
 
-Před započetím programátorských prací, předloží dodavatel ke konzultaci prototyp navrženého uživatelského rozhraní systému.
+<span style="background:yellow"><strong>Dotaz č. 38:</strong> existují požadavky na HW rozhraní? Jaké zařízení musí systém podporovat?</span>
 
-Dokumentace 
-Dokumentace musí obsahovat minimálně: datový model - průběžně aktualizovaný popis struktury databáze, programátorskou dokumentaci (phpDoc), podklady pro uživatelskou příručku (výslednou uživatelskou příručku bude sestavovat pro své zaměstnance objednatel).
+<span style="background:yellow"><strong>Dotaz č. 39:</strong> existují požadavky na SW rozhraní? Jaké OS musí systém podporovat?</span>
 
-Dostupnost, záložní řešení
+<span style="background:yellow"><strong>Dotaz č. 40:</strong> existují požadavky na komunikační rozhraní (např. komunikace REST API)?</span>
 
-Požadavky na architekturu systému
-Využít výlučně architekturu tenkého klienta, tj. navrhnout systém tak, aby na straně pracovní stanice uživatele nebylo nutno instalovat žádný speciálně vytvořený software. Uživatelské rozhraní systému pro všechny role bude realizováno prostřednictvím tenkého klienta (webové řešení) podporované současnými hlavními prohlížeči (při nejmenším Google Chrome, Mozilla FireFox, Microsoft Edge, na iOS pak Safari).
+<span style="background:yellow"><strong>Dotaz č. 41:</strong> jak velké objemy dat předpokládáte (počet zákazníků v systému celkem/denně, počet rezervací celkem/denně)?</span>
 
-3.2 Hardware Interfaces
-<Describe the logical and physical characteristics of each interface between the software product
-and the hardware components of the system. This may include the supported device types, the
-nature of the data and control interactions between the software and the hardware, and
-communication protocols to be used.>
-
-3.3 Software Interfaces
-<Describe the connections between this product and other specific software components (name
-and version), including databases, operating systems, tools, libraries, and integrated commercial
-components. Identify the data items or messages coming into the system and going out and
-describe the purpose of each. Describe the services needed and the nature of communications.
-Refer to documents that describe detailed application programming interface protocols. Identify
-data that will be shared across software components. If the data sharing mechanism must be
-implemented in a specific way (for example, use of a global data area in a multitasking operating
-system), specify this as an implementation constraint.>
-
-3.4 Communications Interfaces
-<Describe the requirements associated with any communications functions required by this
-product, including e-mail, web browser, network server communications protocols, electronic
-forms, and so on. Define any pertinent message formatting. Identify any communication standards
-that will be used, such as FTP or HTTP. Specify any communication security or encryption issues,
-data transfer rates, and synchronization mechanisms.>
-
-Objem dat?
-
-Přenositelonost
-
-5.2 Safety Requirements (Kybernetická bezpečnost) 2
-5.3 Security Requirements
-<Specify any requirements regarding security or privacy issues surrounding use of the product or
-protection of the data used or created by the product. Define any user identity authentication
-requirements. Refer to any external policies or regulations containing security issues that affect the
-product. Define any security or privacy certifications that must be satisfied.>
-
-5.3.3 Performance requirements (Čas odezvy systému) 8
-Čas odezvy systému
-Systém musí 95% žádostí na zobrazení stránky zpracovat do 3s. Žádost na filtrování a řazení dat nesmí trvat déle než 7s.
-
-
-5.4 Software Quality Attributes
-<Specify any additional quality characteristics for the product that will be important to either the
-customers or the developers. Some to consider are: adaptability, availability, correctness,
-flexibility, interoperability, maintainability, portability, reliability, reusability, robustness, testability,
-and usability. Write these to be specific, quantitative, and verifiable when possible. At the least,
-clarify the relative preferences for various attributes, such as ease of use over ease of learning.>
-
-lokalizace
+<span style="background:yellow"><strong>Dotaz č. 42:</strong> jaké máte požadavky na čas odezvy systému (např. 95% žádostí na zobrazení okna systému musí být zpracováno do 3s, statistiky, filtrování a řazení dat nesmí trvat déle než 7s)?</span>
 
 [&laquo; Zpět na obsah](#obsah)
 
