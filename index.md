@@ -89,7 +89,9 @@ Online taxislužba je systém určený řidičům a zákazníkům taxislužby. U
 <span style="background: yellow">Kromě požadavků, které byly přímo zmíněny ve vašemu úvodním dopise, přikládám i mnou navrhované požadavky, které vychází ze zkušeností s podobnými systémy.</span>
 
 **Legenda - priority**
-
+🔴 Must have
+🟡 Should have
+⚪ Could have
 
 {% for category in site.categories %}
 #### {{ category[0] }}
@@ -123,8 +125,18 @@ Online taxislužba je systém určený řidičům a zákazníkům taxislužby. U
           {{ post.title }}
           {% endif %}
         </td>
-        <td width="120">{{ post.priority }}</td>
-        <td>{{ post.user }}</td>
+        <td width="120">
+          {% if post.priority contains 'Must have' %}
+          🔴
+          {% elsif post.priority contains 'Should have' %}
+          🟡
+          {% elsif post.priority contains 'Could have' %}
+          ⚪
+          {% else %}
+          {{ post.priority }}
+          {% endif %}
+        </td>
+        <td width="150">{{ post.user }}</td>
         <td width="200">{{ post.source }}</td>
         <td width="100">
           {% if post.detail %}
@@ -134,7 +146,7 @@ Online taxislužba je systém určený řidičům a zákazníkům taxislužby. U
       </tr>
       {% if post.questions %}
       <tr>
-        <td colspan="5">{{ post.questions }}</td>
+        <td colspan="6">{{ post.questions }}</td>
       </tr>
       {% endif %}
     {% endfor %}
