@@ -89,30 +89,45 @@ Online taxislužba je systém určený řidičům a zákazníkům taxislužby. U
 <span style="background: yellow">Kromě požadavků, které byly přímo zmíněny ve vašemu úvodním dopise, přikládám i mnou navrhované požadavky, které vychází ze zkušeností s podobnými systémy.</span>
 
 {% for category in site.categories %}
-  <h3>{{ category[0] }}</h3>
-  <ul>
+#### {{ category[0] }}
+
+<table>
+  <thead>
+    <tr>
+      <th>Označení</th> 
+      <th>Název</th> 
+      <th>Priorita</th> 
+      <th>Zdroj</th> 
+    </tr>
+  </thead>
+  <tbody>
     {% for post in category[1] %}
-      <li><a href=".{{ post.url }}">{{ post.title }}</a></li>
+      <tr>
+        <td>
+          {% if post.detail %}
+          <a href=".{{ post.url }}" title="{{ post.number }}">{{ post.number }}</a>
+          {% else %}
+          {{ post.number }}
+          {% endif %}
+        </td>
+        <td>
+          {% if post.detail %}
+          <a href=".{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+          {% else %}
+          {{ post.title }}
+          {% endif %}
+        </td>
+        <td>{{ post.priority }}</td>
+        <td>{{ post.source }}</td>
+        <td>
+          {% if post.detail %}
+          <a href=".{{ post.url }}" title="Více informace">Více &raquo;</a>
+          {% endif %}
+        </td>
+      </tr>
     {% endfor %}
-  </ul>
-{% endfor %}
-
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href=".{{ post.url }}">{{ post.title }}</a>  {{ post.number }} {{ post.source }}
-      {{ post.excerpt }}
-    </li>
-  {% endfor %}
-</ul>
-
-{% for tag in site.tags %}
-  <h3>{{ tag[0] }}</h3>
-  <ul>
-    {% for post in tag[1] %}
-      <li><a href=".{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+  </tbody>
+</table>
 {% endfor %}
 
 [&laquo; Zpět na obsah](#obsah)
