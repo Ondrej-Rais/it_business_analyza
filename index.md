@@ -8,13 +8,17 @@ title: Specifikace požadavků
 
 <span style="background: yellow">Pozn.: žlutou barvou označené texty jsou připravené dotazy.</span>
 
+[&laquo; Zpět na obsah](#obsah)
+
 ### 1.1 Účel dokumentu 
 
 Objednatel objednává systém a potřebuje se s dodavatelem domluvit na rozsahu systému. Cílem tohoto dokumentu je poskytnout popis systému vč. všech požadavků objednatele. Slouží dodavateli jako podklad pro realizaci. Objednateli slouží pro ujasnění požadavků a jako kontrolní seznam při přebírání díla od dodavatele.
 
+[&laquo; Zpět na obsah](#obsah)
+
 ### 1.2 Vize a rozsah systému 
 
-Online taxi služba určená řidičům a zákazníkům taxislužby. Umožňuje provést zákazníkům rezervaci (vč. předběžných rezervací) s možností platby. Systém poskytuje vedení společnosti přehled o kvalifikaci a zákaznickém hodnocení řidičů. Systém dále umožňuje zákazníkům kontaktovat technickou podporu systému.  
+Online taxi systém určený řidičům a zákazníkům taxislužby. Umožňuje provést zákazníkům rezervaci (vč. předběžných rezervací) s možností platby. Systém poskytuje vedení společnosti přehled o kvalifikaci a zákaznickém hodnocení řidičů. Systém dále umožňuje zákazníkům kontaktovat technickou podporu systému.  
 
 ![Myšlenková mapa](https://cdn-0.plantuml.com/plantuml/png/LP0zSeCm48LxJg6QKxXCat4cJfLkGJlE6hHYf8L9V0SV89EAqWMJFeMRXNi512vSlXzzUj8k2WHnnDP1a-LcppKn6e5FYdKxtGh8yjmScg1z1sRw9alZPVgTpTmyWr29nleEBVieEYJxoS-gHDRXeMzUyOoXWn9JQr-1csuaUatoO0I3qu7HhN5ncg7QBvGJiLwDZxuOVr9udnCseWuh_qXH0gH99dx5cUtQ9NcfGR1OK9kRAEyGTQZNA_Hll0WoLalz3SiFfhBItZJUDZx0EibYtEhM2vpRXot9kZzqFYF4nso7RBU__GS0)
 
@@ -26,15 +30,21 @@ Online taxi služba určená řidičům a zákazníkům taxislužby. Umožňuje 
 
 <span style="background: yellow"><b>Dotaz č. 4: </b> existují nějaká rizika, která by omezila naplnění cílů?</span>
 
+[&laquo; Zpět na obsah](#obsah)
+
 ### 1.3 Reference
 
 <span style="background: yellow"><b>Dotaz č. 5: </b> existují nějaké materiály či dokumenty, např. manuál firemní identity, které bude nutné zohlednit při vývoji systému?</span>
+
+[&laquo; Zpět na obsah](#obsah)
 
 ## 2. Všeobecný popis
 
 ### 2.1 Kontext systému
 
 <span style="background: yellow"><b>Dotaz č. 6: </b> existuje ve vaší společnosti nějaký jiný systém, na který by měl být nový systém napojen? Pokud ano, o jaké systémy se jedná? Máte k dispozici diagram architektury systémů?</span>
+
+[&laquo; Zpět na obsah](#obsah)
 
 ### 2.2 Přehled hlavních funkcí systému
 
@@ -43,6 +53,8 @@ Online taxi služba určená řidičům a zákazníkům taxislužby. Umožňuje 
 * Monitoring dovedností řidičů
 * Technická podpora
 * Report pro vedení
+
+[&laquo; Zpět na obsah](#obsah)
 
 ### 2.3 Charakteristika uživatelů systému
 
@@ -53,6 +65,8 @@ Online taxi služba určená řidičům a zákazníkům taxislužby. Umožňuje 
 | Zákazník              | Rezervuje, hodnotí, provádí platbu, pokládá dotazy na technickou podporu.              |
 | Pracovník technické podpory              |  Odpovídá na dotazy od zákazníků, příp. předává na vývojový tým.      |
 | Dispečink              | Přijímá nové rezervace a předává je dostupným řidičům.              |
+
+[&laquo; Zpět na obsah](#obsah)
 
 ### 2.4 Omezení při návrhu a implementaci
 
@@ -65,6 +79,8 @@ Online taxi služba určená řidičům a zákazníkům taxislužby. Umožňuje 
 </div>
 
 <span style="background: yellow"><b>Dotaz č. 8: </b> budou vývojáři limitováni nějakou technologií? Musí se jednat o nativní mobilní aplikaci nebo může být využito technologie tenkého klienta a systém vytvořen jako webová responzivní aplikace?</span>
+
+[&laquo; Zpět na obsah](#obsah)
 
 ## 3. Přehled požadavků na systém
 
@@ -87,6 +103,8 @@ Online taxi služba určená řidičům a zákazníkům taxislužby. Umožňuje 
     {% endfor %}
   </ul>
 {% endfor %}
+
+[&laquo; Zpět na obsah](#obsah)
 
 ### 3.2 Nefunkční požadavky 
 
@@ -159,8 +177,14 @@ clarify the relative preferences for various attributes, such as ease of use ove
 
 lokalizace
 
+[&laquo; Zpět na obsah](#obsah)
+
 ## 4. Ostatní
 
 ## 4.1 Slovník výrazů
 
+[&laquo; Zpět na obsah](#obsah)
+
 ## 4.2 Úkoly k dořešení
+
+[&laquo; Zpět na obsah](#obsah)
