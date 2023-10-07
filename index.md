@@ -88,30 +88,33 @@ Online taxislužba je systém určený řidičům a zákazníkům taxislužby. U
 
 <span style="background: yellow">Kromě požadavků, které byly přímo zmíněny ve vašemu úvodním dopise, přikládám i mnou navrhované požadavky, které vychází ze zkušeností s podobnými systémy.</span>
 
-**Legenda - priority**
+**Legenda - priority:**
+
 🔴 Must have
+
 🟡 Should have
+
 ⚪ Could have
 
 {% for category in site.categories %}
 #### {{ category[0] }}
 
-<table width="100%">
+<table class="full">
   <thead>
     <tr>
-      <th>Označení</th> 
+      <th width="120">Označení</th> 
       <th>Název</th> 
-      <th>Priorita</th> 
-      <th>Typ uživatele</th> 
-      <th>Zdroj</th> 
-      <th>Detail</th> 
+      <th width="90">Priorita</th> 
+      <th width="150">Typ uživatele</th> 
+      <th width="200">Zdroj</th> 
+      <th width="100">Detail</th> 
     </tr>
   </thead>
   <tbody>
     {% assign sortedPosts = category[1] | sort: 'number' %}
     {% for post in sortedPosts %}
       <tr>
-        <td width="120">
+        <td>
           {% if post.detail %}
           <a href=".{{ post.url }}" title="{{ post.number }}">{{ post.number }}</a>
           {% else %}
@@ -125,7 +128,7 @@ Online taxislužba je systém určený řidičům a zákazníkům taxislužby. U
           {{ post.title }}
           {% endif %}
         </td>
-        <td width="120">
+        <td style="text-align: center;">
           {% if post.priority contains 'Must have' %}
           🔴
           {% elsif post.priority contains 'Should have' %}
@@ -136,9 +139,9 @@ Online taxislužba je systém určený řidičům a zákazníkům taxislužby. U
           {{ post.priority }}
           {% endif %}
         </td>
-        <td width="150">{{ post.user }}</td>
-        <td width="200">{{ post.source }}</td>
-        <td width="100">
+        <td>{{ post.user }}</td>
+        <td>{{ post.source }}</td>
+        <td>
           {% if post.detail %}
           <a href=".{{ post.url }}" title="Více informace">Více &raquo;</a>
           {% endif %}
